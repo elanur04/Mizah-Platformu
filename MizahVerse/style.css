@@ -1,0 +1,38 @@
+
+:root {
+    --primary-color: #7129c9;
+    --primary-dark: #5a1ea8;
+    --background-start: #1a1a2e;
+    --background-end: #30275a;
+    --text-color: #EAEAEA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(-45deg, #1a1a2e, #30275a, #421987, #2d1b4e);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+} 
