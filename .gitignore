@@ -1,0 +1,5 @@
+# Kullanıcıların yüklediği dosyalar depoya eklenmez
+MizahVerse/uploads/*
+!MizahVerse/uploads/.gitkeep
+MizahVerse/uploads/profil/*
+!MizahVerse/uploads/profil/.gitkeep
