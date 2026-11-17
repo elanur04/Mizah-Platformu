@@ -33,5 +33,8 @@ MizahVerse is a social humor-sharing web platform where users can create content
 
 1. Clone the repository
 2. Set up local server (XAMPP/WAMP)
-3. Import `mesajlar_tablosu.sql` and `takip_tablosu.sql`
-4. Run via localhost
+3. Configure the database connection in `MizahVerse/db.php` for your local environment.
+4. Restore the complete base schema before importing `MizahVerse/mesajlar_tablosu.sql` and `MizahVerse/takip_tablosu.sql`.
+5. Serve `MizahVerse/` through localhost.
+
+**Current setup limitation:** this repository contains only the messages and follows table scripts. The base schema (including users and posts) is missing; those two scripts alone are not a complete installation. Restore the original schema before attempting a fresh setup. Authentication, authorization and input handling need a separate review before a public deployment.
